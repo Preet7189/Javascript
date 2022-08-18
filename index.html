@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Quizzland</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  none" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="todo.html">To do</a>
+          </li>
+        </ul>
+        <div id="clock">
+          <div id="hours">00</div>
+          <div id="minutes">00</div>
+          <div id="seconds">00</div>
+          <div id="ampm">XX</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <div class="banner">
+      <img id="image" src="images/slider1.jpg" alt="banner Image">
+
+      <div id="banner_back">
+        <a href="#">&#10094;</a>
+      </div>
+      <div id="banner_next">
+        <a href="#">&#10095;</a>
+      </div>
+    </div>
+    <br />
+      <div class="about">
+        <h1>Quizzland</h1>
+        <p>This site will improve your ability to code in diffrent programming languages.
+          This Quiz include every thing you should know about programming languages if you want to be programmer.
+          We have comprehensive database of more than 102 information technology quizzes online, test your knowledge with
+          information technology quiz questions.
+          Whenever you have free time then you can play this quiz and increase your tech knowledge.This web application
+          content the quiz related
+          coding subject, so you can clear your doubt and learn new things from this Quiz.
+        </p>
+      </div>    
+    <a href="quiz.html">
+      <h1>OUR Quiz</h1>
+    </a>
+    <hr>
+    <div class="safety">
+      <div class="flow">
+        <a href="quiz.html">
+          <section>
+            <h3>RSD</h3>
+          </section>
+        </a>
+        <a href="quiz.html">
+          <section>
+            <h3>JavaScript</h3>
+          </section>
+        </a>
+        <a href="quiz.html">
+          <section>
+            <h3>.NET</h3>
+          </section>
+        </a>
+      </div>
+      <div class="flow">
+        <a href="quiz.html">
+          <section>
+            <h3>Andorid Devlopment</h3>
+          </section>
+        </a>
+        <a href="quiz.html">
+          <section>
+            <h3>Css</h3>
+          </section>
+        </a>
+        <a href="quiz.html">
+          <section>
+            <h3>JAVA</h3>
+          </section>
+        </a>
+      </div>
+    </div>
+
+    <div class="homequiz">
+      <div>
+        <img src="images\pexels-ivan-samkov-4238511.jpg" alt="list">
+      </div>
+      <div class="homequiz-content">
+        <div class="homequiz-content-dis">
+          <a href="todo.html">
+            <h1>TODO</h1>
+          </a>
+          <p>TODO List are the lists that we generally use to maintain our day to day tasks or list of everything that
+            we have to do, with the most important tasks at the top of the list, and the least important tasks at the
+            bottom.</p>
+        </div>
+        <div class="homequiz-content-dis">
+          <a href="faq.html">
+            <h1>FAQ</h1>
+          </a>
+          <p>If you are planning to start your QUIZ in Quizzland and you wish to know the skills related to it, now is
+            the right time to dive in, when the technology is in its blossoming state.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- END MAIN -->
+
+  <script src="Js/clock.js"></script>
+  <script src="Js/slider.js"></script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Quizzland</h4>
+          <ul>
+            <p>WE are Quizzland.. Hope You enjoyed our Quizz.. Let us know what to improve so that we can make it better
+              everyday. </p>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="todo.html">To Do</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Quiz</h4>
+          <ul>
+            <li><a href="quiz.html">Html QUiz</a></li>
+            <li><a href="quiz.html">JavaScript Quiz</a></li>
+            <li><a href="quiz.html">Androidstudio Quiz</a></li>
+            <li><a href="quiz.html">.NET Quiz</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+            <li><a href="https://www.instagram.com/">instagram</a></li>
+            <li><a href="https://ca.linkedin.com/">linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+</body>
+
+</html>

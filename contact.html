@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Contact Page</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="css/main.css" rel="stylesheet">
+      <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Quizzland</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse  none" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link " href="faq.html" >FAQ</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link " href="contact.html" >Contact</a>
+                 </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="todo.html" >To do</a>
+                 </li>
+               </ul>
+               <div id="clock">
+                  <div id="hours">00</div>
+                  <div id="minutes">00</div>
+                  <div id="seconds">00</div>
+                  <div id="ampm">XX</div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+        <button type="button" class="btn btn-primary" id="error_button" data-toggle="modal" data-target="#exampleModal">
+         Launch demo modal
+         </button>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Data Submitted succesfully</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     We will contact you in some time..!
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+              <div id="report">
+               <h2 class="text-center my-4"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> - We want to help you.</h2>
+                  <p class="text-center">Please fill all details after that we will get in touch with you.</p>
+                  <hr>
+                  <div class="form-row">
+                     <div class="form-group col-md-12">
+                    <label for="name">Enter Name </label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your Name..">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email_address">Your Email Address</label>
+                       <input type="text" class="form-control" id="email_address" placeholder="Example@gmail.com">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mobile">Your Contact Comment</label>
+                        <input type="text" class="form-control" id="mobile" placeholder="123-456-7890">
+                    </div>
+                   </div>
+                  <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <label for="select_date">Select contact date</label>
+                               <input type="date" class="form-control" id="select_date" >
+                           </div>
+                           <div class="form-group col-md-6">
+                               <label for="Comment">Comment</label>
+                               <input type="text" class="form-control" id="Comment" placeholder="Comment your thought here">
+                           </div>
+                        </div>
+                     <button id="submit_form" class="btn btn-dark">Submit</button>
+                  </div>
+            </div>
+      </main>
+      <br>
+      <script src="Js/clock.js"></script>
+      <script src="Js/contact.js"></script>
+      
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Quizzland</h4>
+            <ul>
+              <p>WE are Quizzland.. Hope You enjoyed our Quizz.. Let us know what to improve so that we can make it better everyday. </p>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+              <li><a href="todo.html">To Do</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Quiz</h4>
+            <ul>
+               <li><a href="quiz.html">Html QUiz</a></li>
+               <li><a href="quiz.html">JavaScript Quiz</a></li>
+               <li><a href="quiz.html">Androidstudio Quiz</a></li>
+               <li><a href="quiz.html">.NET Quiz</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+               <li><a href="https://www.instagram.com/">instagram</a></li>
+               <li><a href="https://ca.linkedin.com/">linkedin</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+   </body>
+</html>

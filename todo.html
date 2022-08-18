@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>To do</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="css/main.css" rel="stylesheet">
+      <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Quizzland</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse  none" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link " href="faq.html" >FAQ</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link " href="contact.html" >Contact</a>
+                 </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="todo.html" >To do</a>
+                 </li>
+               </ul>
+               <div id="clock">
+                  <div id="hours">00</div>
+                  <div id="minutes">00</div>
+                  <div id="seconds">00</div>
+                  <div id="ampm">XX</div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+          <img id="left" src="images/time.jpg" alt="time">
+            <div class="wrapper">
+                    <h5>To do list for your Quizzland Visit</h5>
+                        <ul id="taskList" class="list-group">
+                           <li class="list-group-item bg-success text-light d-flex">
+                              List for your Quizzes..!
+                           </li>
+                           <li id="list1" class="list-group-item d-flex justify-content-between align-items-center">    
+                            6am-12pm
+                              <span id="1" onclick="removeTask(this)" class="close"><i class="fa fa-times"></i></span>
+                           </li>
+                           <li id="list2" class="list-group-item d-flex justify-content-between align-items-center">
+                            12pm-6pm
+                              <span id="2" onclick="removeTask(this)" class="close"><i class="fa fa-times"></i></span>
+                           </li>
+                             <li id="list3" class="list-group-item d-flex justify-content-between align-items-center">
+                                6pm-Midnight
+                              <span id="3" onclick="removeTask(this)" class="close"><i class="fa fa-times"></i></span>
+                           </li>
+                           <li id="list4" class="list-group-item d-flex justify-content-between align-items-center">
+                            6pm-Midnight
+                          <span id="4" onclick="removeTask(this)" class="close"><i class="fa fa-times"></i></span>
+                       </li>
+                        </ul>
+                        <div id="myDIV" class="input-group input-group-lg my-4">
+                           <input type="text" id="taskInput" class="form-control" placeholder=" Play Quizzes ....">
+                           <div class="input-group-append">
+                              <button id="addTask" onclick="addElement()" class="btn btn-success">Enter</button>
+                           </div>
+                        </div>
+            </div>
+      </main>
+         <script src="Js/clock.js"></script>
+         <script src="Js/todo.js "></script>
+   <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Quizzland</h4>
+            <ul>
+              <p>WE are Quizzland.. Hope You enjoyed our Quizz.. Let us know what to improve so that we can make it better everyday. </p>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+              <li><a href="todo.html">To Do</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Quiz</h4>
+            <ul>
+               <li><a href="quiz.html">Html QUiz</a></li>
+               <li><a href="quiz.html">JavaScript Quiz</a></li>
+               <li><a href="quiz.html">Androidstudio Quiz</a></li>
+               <li><a href="quiz.html">.NET Quiz</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+               <li><a href="https://www.instagram.com/">instagram</a></li>
+               <li><a href="https://ca.linkedin.com/">linkedin</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+   </body>
+</html>
